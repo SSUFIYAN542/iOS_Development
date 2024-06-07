@@ -6,8 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ABC>//Declare Delegate
+@property (strong, nonatomic) IBOutlet UITextField *txtfirstname;
+@property (strong, nonatomic) IBOutlet UITextField *txtfullname;
 
 
 @end
