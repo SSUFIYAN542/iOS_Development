@@ -20,6 +20,21 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [txtLastName resignFirstResponder];
+    [self.delegate setlastName:txtLastName.text];
+}
+
+- (void)doneBt:(id)sender{
+    [txtLastName resignFirstResponder];
+    [self.delegate setlastName:txtLastName.text];
+    [self.delegate setBgColor:[UIColor orangeColor]];
+    [self.delegate setTxtColor:[UIColor blueColor]];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    
+}
 /*
 #pragma mark - Navigation
 
@@ -30,7 +45,4 @@
 }
 */
 
-- (IBAction)doneBt:(id)sender {
-    
-}
 @end
