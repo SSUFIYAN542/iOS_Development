@@ -1,0 +1,1 @@
+Created a Sample project for iBeacon for monitoring and ranging beacon data(UUID, Minor value, Major value, proximity, RSSI, Accuracy). This app is designed to continuously scan for nearby iBeacon devices and retrieve their broadcasted values for display and processing. 
